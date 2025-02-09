@@ -80,10 +80,9 @@ def main():
         # Print the stylized text
         print(f"Stylized text: {styled_text}")
 
-        # Copy the text to the clipboard with <p>...</p> tags
-        styled_text_with_tags = f"<p>{styled_text}</p>"
-        pyperclip.copy(styled_text_with_tags)
-        print("Text copied to clipboard as HTML paragraph.")
+        # Copy the text to the clipboard
+        pyperclip.copy(styled_text)
+        print("Text copied to clipboard.")
 
         # Wait for Enter to generate a new text
         input("Press Enter to generate a new text (press Ctrl+C to exit)...")
